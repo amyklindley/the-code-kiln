@@ -1,13 +1,15 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import 'vuetify/styles'
+import 'vuetify/styles/main.sass'
+import '@mdi/font/css/materialdesignicons.css'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from './components/HomePage.vue'
 import AboutPage from './components/AboutPage.vue'
+import ContactPage from './components/ContactPage.vue'
 
 const vuetify = createVuetify({
   components,
@@ -49,12 +51,15 @@ const vuetify = createVuetify({
   },
 })
 
+const routes = [
+  { path: '/', component: HomePage },
+  { path: '/about', component: AboutPage },
+  { path: '/contact', component: ContactPage },
+]
+
 const router = createRouter({
   history: createWebHistory(),
-  routes: [
-    { path: '/', component: HomePage },
-    { path: '/about', component: AboutPage },
-  ],
+  routes: routes,
 })
 
 createApp(App).use(vuetify).use(router).mount('#app')

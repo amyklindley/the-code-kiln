@@ -7,7 +7,7 @@ const theme = useTheme()
 const backgroundColor = computed(() => theme.current.value.colors.background)
 
 const symbolList = ['{ }', '&lt;/&gt;', '()', '[ ]', ';', '&lt;?&gt;', '=&gt;']
-const getRandom = (min, max) => Math.random() * (max - min) + min
+const getRandom = (min: number, max: number) => Math.random() * (max - min) + min
 
 const bgSymbols = Array.from({ length: 9 }, (_, i) => {
   const symbol = symbolList[Math.floor(Math.random() * symbolList.length)]
@@ -46,6 +46,7 @@ const symbolColor = computed(() =>
         opacity: item.opacity,
       }"
       v-html="item.symbol"
+      aria-hidden="true"
     />
     <section style="text-align: center; margin-bottom: 48px; position: relative; z-index: 1;">
       <img :src="kilnLogo" alt="The Code Kiln Logo" style="height: 240px; width: auto; margin-bottom: 4px;" />
@@ -82,6 +83,31 @@ const symbolColor = computed(() =>
           </v-card>
         </v-col>
       </v-row>
+    </v-container>
+    
+    <!-- Call to Action Section -->
+    <v-container style="text-align: center; margin-top: 48px; position: relative; z-index: 1;">
+      <v-btn
+        href="mailto:hello@thecodekiln.com?subject=Let's Work Together - Project Inquiry&body=Hi there!%0D%0A%0D%0AI'd like to discuss a project with you.%0D%0A%0D%0AProject details:%0D%0A- %0D%0A- %0D%0A- %0D%0A%0D%0AExpected timeline:%0D%0A- %0D%0A%0D%0ABudget range:%0D%0A- %0D%0A%0D%0AHow did you find me:%0D%0A- %0D%0A%0D%0AThanks!%0D%0A"
+        color="primary"
+        size="x-large"
+        elevation="8"
+        style="
+          font-size: 1.2rem;
+          font-weight: bold;
+          padding: 16px 32px;
+          background: linear-gradient(135deg, #A65C1B 0%, #F7973A 100%);
+          border: 2px solid rgba(255,255,255,0.2);
+          backdrop-filter: blur(8px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+        aria-label="Send email to start working together"
+      >
+        <v-icon icon="mdi-email" style="margin-right: 8px;"></v-icon>
+        Let's Work Together
+      </v-btn>
     </v-container>
   </div>
 </template>

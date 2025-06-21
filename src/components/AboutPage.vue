@@ -9,7 +9,7 @@ const aboutTextColor = computed(() =>
 )
 
 const symbolList = ['{ }', '&lt;/&gt;', '()', '[ ]', ';', '&lt;?&gt;', '=&gt;']
-const getRandom = (min, max) => Math.random() * (max - min) + min
+const getRandom = (min: number, max: number) => Math.random() * (max - min) + min
 
 const bgSymbols = Array.from({ length: 9 }, (_, i) => {
   const symbol = symbolList[Math.floor(Math.random() * symbolList.length)]
@@ -48,6 +48,7 @@ const symbolColor = computed(() =>
         opacity: item.opacity,
       }"
       v-html="item.symbol"
+      aria-hidden="true"
     />
     <v-container class="about-container" style="max-width: 900px; position: relative; z-index: 1;">
       <v-row>
