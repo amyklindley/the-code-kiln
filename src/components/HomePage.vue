@@ -56,7 +56,7 @@ const symbolColor = computed(() =>
     <v-container>
       <v-row justify="center" align="stretch" gap="4">
         <v-col cols="12" md="4" class="d-flex">
-          <v-card elevation="8" class="flex-grow-1 pa-4">
+          <v-card elevation="8" class="flex-grow-1 pa-4" to="/web-apps">
             <v-card-title class="text-h6 font-weight-bold">Web Apps</v-card-title>
             <v-card-text>
               <span style="font-size: 2rem; color: #2196f3;">&lt;/&gt;</span>
@@ -65,7 +65,7 @@ const symbolColor = computed(() =>
           </v-card>
         </v-col>
         <v-col cols="12" md="4" class="d-flex">
-          <v-card elevation="8" class="flex-grow-1 pa-4">
+          <v-card elevation="8" class="flex-grow-1 pa-4" to="/automation">
             <v-card-title class="text-h6 font-weight-bold">Automation</v-card-title>
             <v-card-text>
               <span style="font-size: 2rem; color: #FFD166;">{ }</span>
@@ -74,7 +74,7 @@ const symbolColor = computed(() =>
           </v-card>
         </v-col>
         <v-col cols="12" md="4" class="d-flex">
-          <v-card elevation="8" class="flex-grow-1 pa-4">
+          <v-card elevation="8" class="flex-grow-1 pa-4" to="/consulting">
             <v-card-title class="text-h6 font-weight-bold">Consulting</v-card-title>
             <v-card-text>
               <span style="font-size: 2rem; color: #A65C1B;">&lt;?&gt;</span>

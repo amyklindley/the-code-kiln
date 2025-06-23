@@ -10,6 +10,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from './components/HomePage.vue'
 import AboutPage from './components/AboutPage.vue'
 import ContactPage from './components/ContactPage.vue'
+import HirePage from './components/HirePage.vue'
+import WebAppsPage from './components/WebAppsPage.vue'
+import AutomationPage from './components/AutomationPage.vue'
+import ConsultingPage from './components/ConsultingPage.vue'
 
 const vuetify = createVuetify({
   components,
@@ -55,6 +59,10 @@ const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },
   { path: '/contact', component: ContactPage },
+  { path: '/hire', component: HirePage },
+  { path: '/web-apps', component: WebAppsPage },
+  { path: '/automation', component: AutomationPage },
+  { path: '/consulting', component: ConsultingPage },
 ]
 
 const router = createRouter({

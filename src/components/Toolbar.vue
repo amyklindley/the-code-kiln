@@ -16,9 +16,31 @@
       <v-toolbar-title class="d-none d-sm-block" style="color: #fff; font-weight: bold; letter-spacing: 1px;">The Code Kiln</v-toolbar-title>
     </div>
     <v-spacer />
-    <v-btn variant="text" to="/about" class="d-none d-sm-block" style="font-weight: 500;" aria-label="About page">About</v-btn>
-    <v-btn variant="text" to="/contact" class="d-none d-sm-block" style="margin-right: 12px; font-weight: 500;" aria-label="Contact page">Contact</v-btn>
-    
+
+    <div class="d-none d-sm-flex align-center">
+      <v-btn variant="text" to="/about" color="white">About</v-btn>
+      <v-btn variant="text" to="/contact" color="white">Contact</v-btn>
+      <v-btn variant="flat" color="secondary" to="/hire" class="mx-2 font-weight-bold">Hire Me</v-btn>
+      
+      <v-tooltip text="Toggle light/dark mode" location="bottom">
+        <template v-slot:activator="{ props }">
+          <v-switch
+            v-model="isDark"
+            v-bind="props"
+            color="secondary"
+            :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+            hide-details
+            inset
+            style="margin-right: 8px;"
+          >
+            <template v-slot:thumb>
+              <span style="font-size: 14px;">{{ isDark ? '🔥' : '💨' }}</span>
+            </template>
+          </v-switch>
+        </template>
+      </v-tooltip>
+    </div>
+      
     <!-- Mobile Menu Button -->
     <v-btn
       icon="mdi-menu"
@@ -26,25 +48,8 @@
       class="d-sm-none"
       @click="mobileMenuOpen = !mobileMenuOpen"
       aria-label="Open mobile menu"
-      style="color: white; margin-right: 8px;"
+      style="color: white; margin-right: 16px;"
     ></v-btn>
-    
-    <v-tooltip text="Toggle light/dark mode" location="bottom">
-      <template v-slot:activator="{ props }">
-        <v-switch
-          v-model="isDark"
-          v-bind="props"
-          :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
-          hide-details
-          inset
-          style="margin-right: 8px;"
-        >
-          <template v-slot:thumb>
-            <span style="font-size: 14px;">{{ isDark ? '🔥' : '💨' }}</span>
-          </template>
-        </v-switch>
-      </template>
-    </v-tooltip>
   </v-app-bar>
   
   <!-- Mobile Menu -->
@@ -54,6 +59,20 @@
     location="end"
   >
     <v-list>
+       <!-- Theme toggle for extra-small screens -->
+      <v-list-item class="d-sm-none">
+        <v-list-item-title>Theme</v-list-item-title>
+        <template v-slot:append>
+          <v-switch
+            v-model="isDark"
+            color="secondary"
+            hide-details
+            inset
+          ></v-switch>
+        </template>
+      </v-list-item>
+      <v-divider class="d-sm-none"></v-divider>
+
       <v-list-item
         to="/"
         @click="mobileMenuOpen = false"
@@ -71,6 +90,12 @@
         @click="mobileMenuOpen = false"
         prepend-icon="mdi-email"
         title="Contact"
+      ></v-list-item>
+      <v-list-item
+        to="/hire"
+        @click="mobileMenuOpen = false"
+        prepend-icon="mdi-briefcase"
+        title="Hire Me"
       ></v-list-item>
     </v-list>
   </v-navigation-drawer>
