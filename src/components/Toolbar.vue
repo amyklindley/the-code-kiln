@@ -10,6 +10,18 @@
     "
   >
     <div style="display: flex; align-items: center; height: 100%; gap: 12px; padding: 0 16px;">
+      <v-tooltip text="Back" location="bottom" v-if="showBackButton">
+        <template v-slot:activator="{ props }">
+          <v-btn
+            icon="mdi-arrow-left"
+            variant="text"
+            v-bind="props"
+            @click="goBack"
+            aria-label="Go back"
+            style="color: white; margin-right: 4px;"
+          ></v-btn>
+        </template>
+      </v-tooltip>
       <RouterLink to="/" style="display: flex; align-items: center;">
         <img :src="kilnLogo" alt="The Code Kiln Logo" style="height: 56px; width: auto; vertical-align: middle; cursor: pointer; display: block;" />
       </RouterLink>
@@ -104,12 +116,23 @@
 <script setup lang="ts">
 import kilnLogo from '../assets/code-kiln-logo.png'
 import { useTheme } from 'vuetify'
-import { ref, watch, onMounted } from 'vue'
-import { RouterLink } from 'vue-router'
+import { ref, watch, onMounted, computed } from 'vue'
+import { RouterLink, useRouter, useRoute } from 'vue-router'
 
 const theme = useTheme()
 const isDark = ref(false)
 const mobileMenuOpen = ref(false)
+const router = useRouter()
+const route = useRoute()
+
+// Show back button only if there is history and not on home page
+const showBackButton = computed(() => {
+  return window.history.length > 1 && route.path !== '/'
+})
+
+function goBack() {
+  router.back()
+}
 
 // Load theme preference from localStorage on mount
 onMounted(() => {
