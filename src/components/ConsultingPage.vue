@@ -64,10 +64,10 @@
       <!-- Who This Is For -->
       <h2 class="text-h5 font-weight-bold text-center mb-2">Who This Is For</h2>
       <div class="text-center mb-8">
-        <v-chip class="ma-1" color="secondary" text-color="black">Solo founders or startups</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Established businesses with tech debt</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Project managers</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Teams needing a second set of eyes</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Solo founders or startups</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Established businesses with tech debt</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Project managers</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Teams needing a second set of eyes</v-chip>
       </div>
 
       <!-- How It Works -->

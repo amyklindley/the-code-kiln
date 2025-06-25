@@ -64,20 +64,20 @@
       <!-- Tech I Use -->
       <h2 class="text-h5 font-weight-bold text-center mb-2">Tech I Use</h2>
       <div class="text-center mb-8">
-        <v-chip class="ma-1" color="secondary" text-color="black">.NET 8</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Windows Services</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Azure Functions</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Entity Framework Core</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Dapper</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">SQL Server</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Message Queues</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Service Buses</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">NLog</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Custom Monitoring Hooks</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">JSON</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">CSV</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">HL7</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Custom File Formats</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">.NET 8</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Windows Services</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Azure Functions</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Entity Framework Core</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Dapper</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">SQL Server</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Message Queues</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Service Buses</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">NLog</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Custom Monitoring Hooks</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">JSON</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">CSV</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">HL7</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Custom File Formats</v-chip>
       </div>
 
       <!-- Common Results -->

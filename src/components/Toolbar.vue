@@ -9,7 +9,7 @@
       box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18), 0 1.5px 6px 0 rgba(0,0,0,0.12);
     "
   >
-    <div style="display: flex; align-items: center; height: 100%; gap: 12px; padding: 0 16px;">
+    <div class="toolbar-logo-row" style="display: flex; align-items: center; height: 100%; gap: 12px; padding: 0 16px;">
       <v-tooltip text="Back" location="bottom" v-if="showBackButton">
         <template v-slot:activator="{ props }">
           <v-btn
@@ -18,12 +18,13 @@
             v-bind="props"
             @click="goBack"
             aria-label="Go back"
+            class="toolbar-back-btn"
             style="color: white; margin-right: 4px;"
           ></v-btn>
         </template>
       </v-tooltip>
       <RouterLink to="/" style="display: flex; align-items: center;">
-        <img :src="kilnLogo" alt="The Code Kiln Logo" style="height: 56px; width: auto; vertical-align: middle; cursor: pointer; display: block;" />
+        <img :src="kilnLogo" alt="The Code Kiln Logo" class="toolbar-logo-img" style="height: 56px; width: auto; vertical-align: middle; cursor: pointer; display: block;" />
       </RouterLink>
       <v-toolbar-title class="d-none d-sm-block" style="color: #fff; font-weight: bold; letter-spacing: 1px;">The Code Kiln</v-toolbar-title>
     </div>
@@ -151,4 +152,26 @@ watch(isDark, (newValue) => {
   theme.global.name.value = newValue ? 'dark' : 'light'
   localStorage.setItem('theme', newValue ? 'dark' : 'light')
 })
-</script> 
+</script>
+
+<style scoped>
+/* Ensure the back button is always visible and properly spaced on tablet screens */
+@media (min-width: 600px) and (max-width: 960px) {
+  .toolbar-logo-row {
+    gap: 8px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .toolbar-back-btn {
+    margin-right: 8px !important;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .toolbar-logo-img {
+    height: 48px !important;
+  }
+}
+</style> 

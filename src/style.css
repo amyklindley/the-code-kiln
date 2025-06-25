@@ -4,3 +4,10 @@ body {
   background: #fff;
   color: #222;
 }
+
+/* Global: Force v-chip background dark orange with light text for all secondary chips */
+:root :is(.v-chip[color="secondary"], .v-theme--light .v-chip[color="secondary"]) {
+  background-color: #A65C1B !important;
+  color: #fff !important;
+  border: none !important;
+}

@@ -64,17 +64,17 @@
       <!-- Tech Stack -->
       <h2 class="text-h5 font-weight-bold text-center mb-2">Tech Stack</h2>
       <div class="text-center mb-8">
-        <v-chip class="ma-1" color="secondary" text-color="black">ASP.NET Core</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">C#</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">EF Core</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Dapper</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Vue.js</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Bootstrap</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Azure</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Kubernetes</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">SQL Server</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">REST APIs</v-chip>
-        <v-chip class="ma-1" color="secondary" text-color="black">Integrations</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">ASP.NET Core</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">C#</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">EF Core</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Dapper</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Vue.js</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Bootstrap</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Azure</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Kubernetes</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">SQL Server</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">REST APIs</v-chip>
+        <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Integrations</v-chip>
       </div>
 
       <!-- Why It Matters -->

@@ -23,8 +23,8 @@
       aria-hidden="true"
     />
     <v-container>
-      <v-row justify="center" align="center" class="w-100">
-        <v-col cols="12" md="12" lg="10">
+      <v-row justify="center" align="center">
+        <v-col cols="12" md="12" lg="10" class="mx-auto">
           <v-card class="pa-8" elevation="12" style="background-color: rgba(var(--v-theme-surface), 0.9); backdrop-filter: blur(10px); position: relative; z-index: 1;">
             <v-card-title class="text-h3 font-weight-bold mb-2 text-center">
               Bring Your App Idea to Life
@@ -33,10 +33,10 @@
               Without the Headaches
             </div>
             <div class="text-center mb-8">
-              <v-chip class="ma-1" color="secondary" text-color="black">Reliable</v-chip>
-              <v-chip class="ma-1" color="secondary" text-color="black">Communicative</v-chip>
-              <v-chip class="ma-1" color="secondary" text-color="black">Efficient with existing codebases</v-chip>
-              <v-chip class="ma-1" color="secondary" text-color="black">Fast API & data systems builder</v-chip>
+              <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Reliable</v-chip>
+              <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Communicative</v-chip>
+              <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Efficient with existing codebases</v-chip>
+              <v-chip class="ma-1" color="secondary" style="background-color:#A65C1B !important;color:#fff !important;">Fast API & data systems builder</v-chip>
             </div>
             <v-card-subtitle class="text-h6 text-center mb-8">
               👋 Reliable, Communicative, and Efficient.<br>
@@ -108,5 +108,39 @@ const symbolColor = computed(() =>
   font-family: monospace, monospace;
   font-weight: bold;
   transition: color 0.3s;
+}
+</style>
+
+<style scoped>
+@media (max-width: 600px) {
+  .v-card.pa-8 {
+    padding: 16px !important;
+  }
+  .v-card-title.text-h3 {
+    font-size: 1.5rem !important;
+    word-break: break-word;
+    white-space: normal;
+  }
+  .text-h4 {
+    font-size: 1.1rem !important;
+  }
+  .text-h5 {
+    font-size: 1rem !important;
+  }
+  .text-h6, .v-card-subtitle.text-h6 {
+    font-size: 0.95rem !important;
+    word-break: break-word;
+    white-space: normal;
+  }
+  .mb-8 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+/* Make v-chip background darker in light mode for readability */
+.hire-chip {
+  background-color: #bdbdbd !important;
+  color: #111 !important;
+  border: none !important;
 }
 </style> 
