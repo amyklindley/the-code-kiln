@@ -88,7 +88,7 @@ const symbolColor = computed(() =>
     <!-- Call to Action Section -->
     <v-container style="text-align: center; margin-top: 48px; position: relative; z-index: 1;">
       <v-btn
-        href="mailto:hello@thecodekiln.com?subject=Let's Work Together - Project Inquiry&body=Hi there!%0D%0A%0D%0AI'd like to discuss a project with you.%0D%0A%0D%0AProject details:%0D%0A- %0D%0A- %0D%0A- %0D%0A%0D%0AExpected timeline:%0D%0A- %0D%0A%0D%0ABudget range:%0D%0A- %0D%0A%0D%0AHow did you find me:%0D%0A- %0D%0A%0D%0AThanks!%0D%0A"
+        href="mailto:amy@thecodekiln.com?subject=Let's Work Together - Project Inquiry&body=Hi there!%0D%0A%0D%0AI'd like to discuss a project with you.%0D%0A%0D%0AProject details:%0D%0A- %0D%0A- %0D%0A- %0D%0A%0D%0AExpected timeline:%0D%0A- %0D%0A%0D%0ABudget range:%0D%0A- %0D%0A%0D%0AHow did you find me:%0D%0A- %0D%0A%0D%0AThanks!%0D%0A"
         color="primary"
         size="x-large"
         elevation="8"

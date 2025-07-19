@@ -38,6 +38,15 @@ const backgroundColor = computed(() => theme.current.value.colors.background)
         class="mx-2"
         aria-label="LinkedIn"
       ></v-btn>
+      <v-btn
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        icon="mdi-file"
+        variant="text"
+        class="mx-2"
+        aria-label="Resume (PDF)"
+      ></v-btn>
     </div>
   </v-footer>
 </template> 
